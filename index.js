@@ -1,6 +1,5 @@
 import home from "./pages/home/index.js"
 import especialidades from "./pages/especialidades/index.js"
-import contato from "./pages/contato/index.js"
 import portifolio from "./pages/portifolio/index.js"
 import sobre from "./pages/sobre/index.js"
 
@@ -24,12 +23,7 @@ const init = () => {
             
             case "#portifolio":
                 main.appendChild(portifolio());
-                break;
-                
-            case "#contato":
-                main.appendChild(contato());
-                break;
-            
+                break;            
 
             default:
                 main.appendChild(home());
@@ -62,11 +56,6 @@ window.addEventListener("load", () => {
                 main.appendChild(portifolio());
                 break;
                 
-            case "#contato":
-                main.appendChild(contato());
-                break;
-            
-
             default:
                 main.appendChild(home());
             
